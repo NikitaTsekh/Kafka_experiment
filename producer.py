@@ -56,14 +56,14 @@ if __name__ == '__main__':
     topic = "worker_send_bill" #worker_get_information, worker_validation, worker_send_bill
     last_names = ['ivanov', 'petrov', 'sidorov', 'pechenkin', 'ageev', 'dzerzhisky']
     
-    events_and_payments = [{'Стрижка газонов':90102},{'Покраска стен':10500},{'Разгрузка фуры 20 т':15000},{'Клининг':25000}]
+    # events_and_payments = [{'Стрижка газонов':90102},{'Покраска стен':10500},{'Разгрузка фуры 20 т':15000},{'Клининг':25000}]
 
     count = 0
     for _ in range(10):
 
         last_name = choice(last_names)
-        events_and_payment = choice(events_and_payments)
-        value_bytes = str(events_and_payment).encode('utf-8')
+        # events_and_payment = choice(events_and_payments)
+        # value_bytes = str(events_and_payment).encode('utf-8')
 
         # producer.produce(topic, value_bytes, last_name, callback=delivery_callback)
 
